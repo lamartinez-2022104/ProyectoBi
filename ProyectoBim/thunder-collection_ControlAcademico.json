@@ -1,0 +1,404 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ControlAcademico",
+    "dateExported": "2024-02-23T23:17:35.603Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "100b16c4-ef1b-4db6-b43a-2bf4375fbac2",
+            "name": "Teacher",
+            "containerId": "",
+            "created": "2024-02-23T18:49:35.291Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "62f8ab23-957a-4bc7-850d-11a8c66aa646",
+            "name": "Student",
+            "containerId": "",
+            "created": "2024-02-23T18:49:41.890Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "c3fe1675-e9aa-4728-964b-5179ef960d5e",
+            "name": "Class",
+            "containerId": "",
+            "created": "2024-02-23T18:49:55.627Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "a19cb42a-44a1-4f6a-ae8e-469afbeb6aa3",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "c3fe1675-e9aa-4728-964b-5179ef960d5e",
+            "name": "SaveClass",
+            "url": "/save",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-23T18:51:27.353Z",
+            "modified": "2024-02-23T18:52:46.690Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "mate"
+                    },
+                    {
+                        "name": "description",
+                        "value": "ciencias exactas  "
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "11a28e00-ecac-4b33-b4ae-d02759590c46",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "c3fe1675-e9aa-4728-964b-5179ef960d5e",
+            "name": "UpdateClass",
+            "url": "/update/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-23T18:55:35.746Z",
+            "modified": "2024-02-23T18:57:05.995Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ""
+                    },
+                    {
+                        "name": "description",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6bfb59b4-39b3-48cc-877e-1ee3c6a117bf",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "c3fe1675-e9aa-4728-964b-5179ef960d5e",
+            "name": "DeleteClass",
+            "url": "/delete/",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-23T18:58:11.076Z",
+            "modified": "2024-02-23T18:58:22.779Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "adae4012-8c1e-4664-a38b-d8f75c827cb2",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "c3fe1675-e9aa-4728-964b-5179ef960d5e",
+            "name": "GetClasses",
+            "url": "/get",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-23T18:58:37.716Z",
+            "modified": "2024-02-23T18:58:50.845Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "139cd901-d712-42ef-b8d1-428a0922b06c",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "100b16c4-ef1b-4db6-b43a-2bf4375fbac2",
+            "name": "RegisterTeacher",
+            "url": "/teacher/register",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-23T18:59:50.476Z",
+            "modified": "2024-02-23T20:02:37.479Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Pablo"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Rivas"
+                    },
+                    {
+                        "name": "age",
+                        "value": "34"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "65d8e97e2296215fd119d82e"
+                    },
+                    {
+                        "name": "email",
+                        "value": "bjoj"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "dfbc7f35-90ed-4f92-b60b-d155acfee168",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "100b16c4-ef1b-4db6-b43a-2bf4375fbac2",
+            "name": "TeacherLogin",
+            "url": "/teacher/login",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-02-23T19:00:57.292Z",
+            "modified": "2024-02-23T19:17:00.951Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "bjoj"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "da054e8c-c9e0-4adb-ae30-daaaf9687f5d",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "100b16c4-ef1b-4db6-b43a-2bf4375fbac2",
+            "name": "TeacherUpdate",
+            "url": "/teacher/update/65d8eee73db026fb99fddbee",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-02-23T19:01:58.364Z",
+            "modified": "2024-02-23T19:53:37.227Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "brayan"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "joj"
+                    },
+                    {
+                        "name": "age",
+                        "value": "34"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "65d8e97e2296215fd119d82e"
+                    },
+                    {
+                        "name": "email",
+                        "value": "bjoj"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "37a3ef24-86bf-47e7-9d38-fac15f49e732",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "100b16c4-ef1b-4db6-b43a-2bf4375fbac2",
+            "name": "TeacherDelete",
+            "url": "/teacher/delete/65d8f2f1cc9eb4a86035ac47",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2024-02-23T19:03:10.249Z",
+            "modified": "2024-02-23T19:35:14.009Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aWQiOiI2NWQ4ZWVlNzNkYjAyNmZiOTlmZGRiZWUiLCJlbWFpbCI6ImJqb2oiLCJuYW1lIjoiQnJ5YW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDg3MTY4OTAsImV4cCI6MTcwODcyNzY5MH0.VmNh5jZyclyVUtxan-6Pkq3HLk0yyxy7aAsQWvgBPTM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0384bbb9-b604-4d1c-94e0-527a82949612",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "62f8ab23-957a-4bc7-850d-11a8c66aa646",
+            "name": "StudentRegister",
+            "url": "/student/register",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2024-02-23T19:04:01.461Z",
+            "modified": "2024-02-23T19:23:01.209Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaWQiOiI2NWQ4ZWZkOWNjOWViNGE4NjAzNWFjNDMiLCJlbWFpbCI6ImxtYXJ0aW5leiIsIm5hbWUiOiJMdWlzIiwicm9sZSI6IlNUVURFTlQiLCJpYXQiOjE3MDg3MTYxNTgsImV4cCI6MTcwODcyNjk1OH0.F2Cb6D8Csy5jMKSs0wZ9cFscgzPA-EPoFYb9REMqwz0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Luis"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Martínez"
+                    },
+                    {
+                        "name": "age",
+                        "value": "18"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "65d8e97e2296215fd119d82e"
+                    },
+                    {
+                        "name": "email",
+                        "value": "lmartinez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4538afac-781c-4ea7-b6ca-1ffe7252bfcc",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "62f8ab23-957a-4bc7-850d-11a8c66aa646",
+            "name": "StudentLogin",
+            "url": "/student/login",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-02-23T19:04:58.747Z",
+            "modified": "2024-02-23T19:22:38.268Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "lmartinez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2d642ff4-3b32-4a38-838c-4c77a7a8d84b",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "62f8ab23-957a-4bc7-850d-11a8c66aa646",
+            "name": "StudentUpdate",
+            "url": "/student/update/",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2024-02-23T19:06:32.923Z",
+            "modified": "2024-02-23T19:07:01.994Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ""
+                    },
+                    {
+                        "name": "surname",
+                        "value": ""
+                    },
+                    {
+                        "name": "age",
+                        "value": ""
+                    },
+                    {
+                        "name": "subject",
+                        "value": ""
+                    },
+                    {
+                        "name": "email",
+                        "value": ""
+                    },
+                    {
+                        "name": "password",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9712d8c3-b2c8-4261-8225-c5ffa23b214f",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "62f8ab23-957a-4bc7-850d-11a8c66aa646",
+            "name": "StudentDelete",
+            "url": "/student/delete/",
+            "method": "DELETE",
+            "sortNum": 160000,
+            "created": "2024-02-23T19:07:27.443Z",
+            "modified": "2024-02-23T19:07:42.897Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "97aede75-f0de-4e5b-80e8-583ddde5eae8",
+            "colId": "05e541e2-d476-44bb-9c4c-3324cfcadd46",
+            "containerId": "62f8ab23-957a-4bc7-850d-11a8c66aa646",
+            "name": "StudentSearch",
+            "url": "/student/search",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-02-23T19:07:53.905Z",
+            "modified": "2024-02-23T19:08:30.822Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
